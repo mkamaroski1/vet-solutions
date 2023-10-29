@@ -15,7 +15,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-[100%] sticky top-0 z-50 px-24 justify-between items-center bg-[#1E1E1E]/75 translucide flex max-w-full h-[100px]">
+    <header className="w-[100%] sticky top-0 z-50 px-24 justify-between items-center bg-[#1E1E1E]/75 translucide flex max-w-full h-[80px]">
       <div className="flex gap-2">
         {" "}
         <Image width={48} height={60} src={logo} alt="logo" />
