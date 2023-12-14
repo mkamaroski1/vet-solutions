@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
-  const logo = '/images/logo.png';
+  const logo = '/images/Logo.svg';
   const VetSolutions = '/images/vetsolutions.svg';
   const links = [
     { text: 'HOME', href: '/' },
