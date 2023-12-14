@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
-  const logo = '/images/logo.png';
+  const logo = '/images/Logo.svg';
   const VetSolutions = '/images/vetsolutions.svg';
   const links = [
     { text: 'HOME', href: '/' },
@@ -24,7 +24,7 @@ export default function Header() {
           width={200}
           height={80}
           src={VetSolutions}
-          alt="vetSolution"
+          alt="vetSolutions"
         />
       </div>
       <div className="flex text-white gap-8 text-xs justify-center w-[1050px] items-center">
