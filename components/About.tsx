@@ -6,7 +6,7 @@ type AboutProps = {
 
 const About = ({ title }: AboutProps) => {
   return (
-    <div className=" mt-[94rem] w-[73rem] h-[44rem] bg-purple rounded-3xl">
+    <div className=" shadow-inherit mt-[94rem] w-[73rem] h-[44rem] bg-purple rounded-3xl">
       <div className=" mt-[4rem] ml-[5rem] w-[53rem] h-[38rem]">
         <h1 className="text-3xl font-bold text-white">{title}</h1>
         <p className="mt-12 text-white text-lg">
