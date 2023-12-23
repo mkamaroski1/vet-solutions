@@ -9,7 +9,7 @@ const analise = 'aboutJobImages/analise.svg';
 export const AboutJob = () => {
   return (
     <div className="">
-      <h1 className="text-purple flex items-center justify-center mt-[30rem] text-6xl font-bold underline">
+      <h1 className="text-purple flex items-center justify-center mt-[8rem] text-6xl font-bold underline">
         O QUE OFERECEMOS?
       </h1>
       <div className=" mt-[6rem] flex justify-between">

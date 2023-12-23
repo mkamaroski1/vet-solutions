@@ -8,7 +8,7 @@ const abertura = 'servicesImages/AberturaEmpresas';
 export const AboutServices = () => {
   return (
     <>
-      <h1 className="text-white flex items-center justify-center mt-[30rem] text-6xl font-bold underline">
+      <h1 className="text-purple flex items-center justify-center mt-[8rem] text-6xl font-bold underline">
         serviços adicionais
       </h1>
       <div className=" mt-[6rem] flex justify-between">
