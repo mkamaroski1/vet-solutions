@@ -64,12 +64,7 @@ export default function Home() {
       </h1>
       <div className="flex justify-center mt-8">
         {cardData.map((card) => (
-          <AboutJob
-            key={card.altText}
-            image={card.image}
-            href={card.href}
-            altText={card.altText}
-          />
+          <AboutJob {...card} key={card.altText} />
         ))}
       </div>
 
@@ -79,12 +74,7 @@ export default function Home() {
 
       <div className="flex justify-center mt-8">
         {jobData.map((card) => (
-          <AboutJob
-            key={card.altText}
-            image={card.image}
-            href={card.href}
-            altText={card.altText}
-          />
+          <AboutJob {...card} key={card.altText} />
         ))}
       </div>
 
