@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
 
-import { Info, WhatsApp } from './formText';
+import { Info, WhatsApp } from "./formText";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -14,23 +14,23 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 const formSchema = z.object({
   username: z.string().min(7, {
-    message: 'Username must be at least 7 characters.',
+    message: "Username must be at least 7 characters.",
   }),
-  email: z.string().email({ message: 'Invalid email address' }),
-  type: z.enum(['yes', 'no', 'other'], {
-    required_error: 'You need to select a notification type.',
+  email: z.string().email({ message: "Invalid email address" }),
+  type: z.enum(["yes", "no", "other"], {
+    required_error: "You need to select a notification type.",
   }),
-  type2: z.enum(['clinic', 'hospital', 'petShop', 'another'], {
-    required_error: 'You need to select a notification type.',
+  type2: z.enum(["clinic", "hospital", "petShop", "another"], {
+    required_error: "You need to select a notification type.",
   }),
   invoicing: z.string().min(3, {
-    message: 'Min 3 numbers.',
+    message: "Min 3 numbers.",
   }),
 });
 
@@ -38,7 +38,7 @@ export function ProfileForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: '',
+      username: "",
     },
   });
 
