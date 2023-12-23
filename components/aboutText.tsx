@@ -1,4 +1,4 @@
-export const aboutText = () => {
+export const AboutText = () => {
   return (
     <p>
       Na Vet Solutions, simplificamos a gestão do seu empreendimento, permitindo
