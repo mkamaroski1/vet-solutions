@@ -1,49 +1,50 @@
-import Navbar from "@/components/Navbar";
-import About from "@/components/About";
-import { aboutData } from "@/components/About-data";
-import { ProfileForm } from "@/components/profileForm";
-import { MainLogo } from "@/components/mainLogo";
-import { AboutJob } from "@/components/aboutJob";
-import { Differential } from "@/components/differential";
+import Navbar from '@/components/Navbar';
+import About from '@/components/About';
+import { aboutData } from '@/components/About-data';
+import { ProfileForm } from '@/components/profileForm';
+import { MainLogo } from '@/components/mainLogo';
+import { AboutJob } from '@/components/aboutJob';
+import { Differential } from '@/components/differential';
+import { Plans } from '@/components/plans';
 
 const cardData = [
   {
-    image: "aboutJobImages/Contador.svg",
-    href: "https:www.google.com/",
-    altText: "Contador",
+    image: 'aboutJobImages/Contador.svg',
+    href: 'https:www.google.com/',
+    altText: 'Contador',
   },
   {
-    image: "aboutJobImages/recHumanos.svg",
-    href: "https:www.google.com/",
-    altText: "Recursos Humanos",
+    image: 'aboutJobImages/recHumanos.svg',
+    href: 'https:www.google.com/',
+    altText: 'Recursos Humanos',
   },
   {
-    image: "aboutJobImages/marketing.svg",
-    href: "https:www.google.com/",
-    altText: "Marketing",
+    image: 'aboutJobImages/marketing.svg',
+    href: 'https:www.google.com/',
+    altText: 'Marketing',
   },
   {
-    image: "aboutJobImages/analise.svg",
-    href: "https:www.google.com/",
-    altText: "Análise",
+    image: 'aboutJobImages/analise.svg',
+    href: 'https:www.google.com/',
+    altText: 'Análise',
   },
 ];
 
 const jobData = [
   {
-    image: "/branding.svg",
-    href: "https:www.google.com/",
-    altText: "Branding",
+    image: '/branding.svg',
+    href: 'https:www.google.com/',
+    altText: 'Branding',
   },
   {
-    image: "/criacaoSites.svg",
-    href: "https:www.google.com/",
-    altText: "Criaçao de sites",
+    image: '/criacaoSites.svg',
+    href: 'https:www.google.com/',
+    altText: 'Criaçao de sites',
   },
   {
-    image: "/aberturaEmpresas.svg",
-    href: "https:www.google.com/",
-    altText: "Abertura de empresas",
+    image: '/aberturaEmpresas.svg',
+    href: 'https:www.google.com/',
+    altText: 'Abertura de empresas',
   },
 ];
 
@@ -79,6 +80,7 @@ export default function Home() {
       </div>
 
       <Differential />
+      <Plans />
     </main>
   );
 }

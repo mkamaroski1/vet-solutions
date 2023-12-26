@@ -1,16 +1,33 @@
 import { CiCalendar } from 'react-icons/ci';
-import { iconCard } from './iconCard';
+import {
+  RiCustomerService2Fill,
+  RiTeamFill,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import { IconCard } from './iconCard';
 import { Fragment } from 'react';
 
 const dataArray = [
   {
-    icon: <CiCalendar />,
-    title: 'teste',
-    text: 'aaaaaaaaaaa',
+    icon: <RiCustomerService2Fill size={80} color={`#fff`} />,
+    title: 'Atendimento personalizado',
+    text: 'Oferecemos serviços personalizados, proporcionando um atendimento exclusivo, transparente e diferenciado. Ou seja, com a Vet Solutions você possui um canal aberto para todas as suas dúvidas.',
   },
-  { icon: <CiCalendar />, title: 'teste2', text: 'aaaaaaaaaaa' },
-  { icon: <CiCalendar />, title: 'teste3', text: 'aaaaaaaaaaa' },
-  { icon: <CiCalendar />, title: 'teste4', text: 'aaaaaaaaaaa' },
+  {
+    icon: <CiCalendar size={80} color={`#fff`} />,
+    title: 'Planos mensais',
+    text: 'Através dos planos mensais personalizados, entregamos flexibilidade, uma vez que você pode escolher o plano que se ajuste melhor às suas possibilidades.',
+  },
+  {
+    icon: <RiTeamFill size={80} color={`#fff`} />,
+    title: 'Nosso time de profissionais',
+    text: 'Os trabalhos serão executados pela equipe de profissionais da Vet Solutions, qualificados no mercado pet.',
+  },
+  {
+    icon: <RiMoneyDollarCircleLine size={80} color={`#fff`} />,
+    title: 'Preços competitivos',
+    text: 'Nosso objetivo é ofertar preços competitivos, entregando serviços de qualidade a um preço justo.',
+  },
 ];
 
 export const Differential = () => {
@@ -25,7 +42,7 @@ export const Differential = () => {
 
       <div className="bg-gray-700 w-[120rem] h-[48rem] mt-[2rem] pt-24 justify-around flex">
         {dataArray.map((data) => {
-          return <iconCard {...data} key={data.title} />;
+          return <IconCard {...data} key={data.title} />;
         })}
       </div>
     </Fragment>
