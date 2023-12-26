@@ -16,7 +16,7 @@ export const PlansCard = ({ icon, title, valor, text }: PlansCardProps) => {
       <h1 className=" text-center text-2xl text-white font-bold">{title}</h1>
       <h2 className="text-7xl text-white text-center">{valor}</h2>
       <p className="text-white text-center text-xl">{text}</p>
-      <button className="border border-white w-[15rem] h-[4rem] items-center justify-center ml-[5.2rem]">
+      <button className="border-4 border-white- w-[15rem] h-[4rem] items-center justify-center ml-[5.2rem] text-white">
         CONHEÇA JÁ!
       </button>
     </div>
