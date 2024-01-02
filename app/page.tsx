@@ -6,6 +6,8 @@ import { MainLogo } from '@/components/mainLogo';
 import { AboutJob } from '@/components/aboutJob';
 import { Differential } from '@/components/differential';
 import { Plans } from '@/components/plans';
+import { Blog } from '@/components/blog';
+import { Footer } from '@/components/footer';
 
 const cardData = [
   {
@@ -81,6 +83,10 @@ export default function Home() {
 
       <Differential />
       <Plans />
+      <div className="bg-gradient-to-b from-orange-100 to-purple ">
+        <Blog />
+        <Footer />
+      </div>
     </main>
   );
 }
