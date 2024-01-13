@@ -9,10 +9,10 @@ type AboutJobProps = {
 
 export const AboutJob = ({ image, href, altText }: AboutJobProps) => {
   return (
-    <div className="">
-      <div className="flex-1  w-[23rem] h-[33rem] ml-[6rem]">
-        <Link href={href}>
-          <Image src={image} width={368} height={528} alt={altText} />
+    <div className="flex justify-center">
+      <div className="w-full sm:w-[23rem] h-auto sm:h-[33rem] my-4 sm:ml-[6rem]">
+        <Link href={href} passHref>
+          <Image src={image} width={368} height={528} alt={altText} layout="responsive" />
         </Link>
       </div>
     </div>

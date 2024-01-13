@@ -48,14 +48,14 @@ export function ProfileForm() {
 
   return (
     <Form {...form}>
-      <form
+       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-950 w-[629px] ml-auto  h-[77rem] rounded-3xl text-white mr-[3rem]"
+        className="bg-blue-950 w-11/12 sm:w-[629px] ml-auto h-auto rounded-3xl text-white mr-auto sm:mr-[3rem] p-4 sm:p-0 mx-4 sm:mx-0"
       >
-        <div className="w-[30rem] h-[8rem] mt-[2rem] ml-[5rem]">
+        <div className="w-full sm:w-[30rem] sm:h-[8rem] mt-[2rem] mx-auto sm:ml-[5rem]">
           <Info />
         </div>
-        <div className="ml-[3rem] space-y-3">
+        <div className="space-y-3 px-4 sm:px-0 sm:ml-[3rem]">
           <FormField
             control={form.control}
             name="username"
@@ -64,7 +64,7 @@ export function ProfileForm() {
                 <FormLabel className="text-2xl">Nome</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-[33rem]"
+                    className="bg-white w-full md:w-[33rem]"
                     placeholder="Digite seu nome"
                     {...field}
                   />
@@ -81,7 +81,7 @@ export function ProfileForm() {
                 <FormLabel className="text-2xl">E-mail</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-[33rem]"
+                    className="bg-white w-full md:w-[33rem]"
                     type="email"
                     placeholder="Digite seu E-mail"
                     {...field}
@@ -92,7 +92,7 @@ export function ProfileForm() {
             )}
           />
         </div>
-        <div className="ml-[3rem] space-y-4">
+        <div className="space-y-4 px-4 sm:px-0 sm:ml-[3rem]">
           <FormField
             control={form.control}
             name="type"
@@ -191,7 +191,7 @@ export function ProfileForm() {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-[33rem]"
+                    className="bg-white w-full md:w-[33rem]"
                     placeholder="R$"
                     {...field}
                   />

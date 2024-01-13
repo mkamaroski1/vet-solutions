@@ -33,18 +33,18 @@ const dataArray = [
 export const Differential = () => {
   return (
     <Fragment>
-      <h1 className="text-black flex items-center justify-center mt-[8rem] text-5xl font-bold underline">
-        Diferenciais
-      </h1>
-      <p className="text-base text-center mt-[2rem] items-center- justify-center flex">
-        Aqui é onde nós fazemos a diferença
-      </p>
+    <h1 className="text-black flex items-center justify-center mt-8 md:mt-[8rem] text-4xl md:text-5xl font-bold underline">
+      Diferenciais
+    </h1>
+    <p className="text-base text-center mt-4 md:mt-[2rem]">
+      Aqui é onde nós fazemos a diferença
+    </p>
 
-      <div className="bg-gray-700 w-[120rem] h-[48rem] mt-[2rem] pt-24 justify-around flex">
-        {dataArray.map((data) => {
-          return <IconCard {...data} key={data.title} />;
-        })}
-      </div>
-    </Fragment>
+    <div className="bg-gray-700 w-full md:w-[120rem] h-auto md:h-[48rem] mt-4 md:mt-[2rem] pt-12 md:pt-24 flex flex-wrap justify-around">
+      {dataArray.map((data) => {
+        return <IconCard {...data} key={data.title} />;
+      })}
+    </div>
+  </Fragment>
   );
 };
