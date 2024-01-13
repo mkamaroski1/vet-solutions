@@ -1,3 +1,7 @@
 export const Footer = () => {
-  return <div className="w-[120rem] h-[30rem]"></div>;
+  return (
+    <div className="w-full md:w-[120rem] h-auto md:h-[30rem] bg-gray-800 text-white">
+  
+    </div>
+  );
 };

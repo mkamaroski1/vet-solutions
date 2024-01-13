@@ -25,15 +25,15 @@ const dataPlans = [
 export const Plans = () => {
   return (
     <>
-      <div className="w-[120rem] h-[66rem] bg-violet-400 ">
-        <h1 className="text-4xl mt-[4rem]  text-white font-bold flex items-center justify-center">
-          comece a Investir nos Seus Negócios
+      <div className="w-full md:w-[120rem] h-auto md:h-[66rem] bg-violet-400 p-4 md:p-0">
+        <h1 className="text-3xl md:text-4xl mt-8 md:mt-[4rem] text-white font-bold flex items-center justify-center">
+          Comece a Investir nos Seus Negócios
         </h1>
-        <p className="text-white text-xl text-center mt-[2rem] items-center- justify-center flex ">
+        <p className="text-white text-lg md:text-xl text-center mt-4 md:mt-[2rem]">
           Estamos prontos para ajudar no crescimento do seu empreendimento
           através dos nossos melhores planos mensais.
         </p>
-        <div className="justify-around pt-24 flex">
+        <div className="flex flex-wrap justify-around pt-12 md:pt-24">
           {dataPlans.map((data) => {
             return <PlansCard {...data} key={data.title} />;
           })}

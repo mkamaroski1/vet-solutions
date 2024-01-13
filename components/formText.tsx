@@ -4,7 +4,7 @@ export const Info = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold flex items-center justify-center">
-        informações e <br /> orçamentos
+        INFORMAÇÕES E <br /> ORÇAMENTOS
       </h1>
       <p className="text-sm mt-[1rem]">
         Preencha o formulario ou clique no link abaixo para entrar em contato
