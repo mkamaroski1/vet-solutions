@@ -1,4 +1,4 @@
-import { ReactComponentElement, ReactNode } from 'react';
+import { ReactComponentElement, ReactNode } from "react";
 
 type AboutProps = {
   title: string;
@@ -7,10 +7,12 @@ type AboutProps = {
 const About = ({ title }: AboutProps) => {
   return (
     <>
-       <div className="flex flex-col sm:flex-row">
-        <div className="shadow-inherit mt-12 sm:mt-[24rem] w-11/12 sm:w-[73rem] h-auto sm:h-[44rem] bg-purple rounded-3xl mr-4 sm:mr-0">
+      <div className="flex justify-between sm:flex-row">
+        <div className="shadow-inherit sm:mt-[24rem] sm:max-h-[42rem] bg-purple rounded-3xl mr-4 sm:mr-0">
           <div className="mt-4 sm:mt-[4rem] mx-4 sm:ml-[5rem] sm:w-[53rem] h-auto sm:h-[38rem]">
-            <h1 className="text-sm font-bold text-white sm:text-3xl">{title}</h1>
+            <h1 className="text-sm font-bold text-white sm:text-3xl">
+              {title}
+            </h1>
             <p className="mt-12 text-white text-sm sm:text-lg">
               Na Vet Solutions, simplificamos a gestão do seu empreendimento,
               permitindo que você se concentre no que é fundamental. Nossos
@@ -38,7 +40,10 @@ const About = ({ title }: AboutProps) => {
             </p>
           </div>
         </div>
-        <div className="shadow-inherit w-full sm:w-[60rem] h-64 sm:h-[39rem] bg-black rounded-3xl mt-8 sm:mt-[34rem]"></div>
+        <video
+          src="https://www.youtube.com/watch?v=-UJ1qPTc_Vo"
+          className="shadow-inherit sm:w-[60rem] h-64 sm:h-[39rem] bg-black rounded-3xl mt-8 sm:mt-[34rem]"
+        />
       </div>
     </>
   );
