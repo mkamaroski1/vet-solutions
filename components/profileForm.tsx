@@ -48,14 +48,14 @@ export function ProfileForm() {
 
   return (
     <Form {...form}>
-       <form
+      <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-950 w-11/12 sm:w-[629px] ml-auto h-auto rounded-3xl text-white mr-auto sm:mr-[3rem] p-4 sm:p-0 mx-4 sm:mx-0"
+        className="bg-blue-950 sm:w-[629px] h-auto rounded-3xl text-white sm:p-0 sm:mx-0"
       >
         <div className="w-full sm:w-[30rem] sm:h-[8rem] mt-[2rem] mx-auto sm:ml-[5rem]">
           <Info />
         </div>
-        <div className="space-y-3 px-4 sm:px-0 sm:ml-[3rem]">
+        <div className="space-y-3 pt-[2rem] px-4 sm:px-0 sm:ml-[3rem]">
           <FormField
             control={form.control}
             name="username"
@@ -92,13 +92,13 @@ export function ProfileForm() {
             )}
           />
         </div>
-        <div className="space-y-4 px-4 sm:px-0 sm:ml-[3rem]">
+        <div className="p-6">
           <FormField
             control={form.control}
             name="type"
             render={({ field }) => (
-              <FormItem className="space-y-3">
-                <FormLabel className=" underline text-2xl">
+              <FormItem className="p-5">
+                <FormLabel className="py-2 text-2xl">
                   Você possui uma empresa formalizada?
                 </FormLabel>
                 <FormControl>
@@ -139,9 +139,7 @@ export function ProfileForm() {
             name="type2"
             render={({ field }) => (
               <FormItem className="space-y-3">
-                <FormLabel className=" underline text-2xl">
-                  Sua empresa é:
-                </FormLabel>
+                <FormLabel className="text-2xl">Sua empresa é:</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
@@ -201,7 +199,11 @@ export function ProfileForm() {
             )}
           />
 
-          <Button type="submit">Enviar</Button>
+          <div className="p-4 flex justify-center">
+            <Button className="w-[20rem] mx-auto" type="submit">
+              Enviar
+            </Button>
+          </div>
           <WhatsApp />
         </div>
       </form>
