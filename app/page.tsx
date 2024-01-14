@@ -4,8 +4,6 @@ import { aboutData } from "@/components/About-data";
 import { ProfileForm } from "@/components/profileForm";
 import { MainLogo } from "@/components/mainLogo";
 import { AboutJob } from "@/components/aboutJob";
-import { Differential } from "@/components/differential";
-import { Plans } from "@/components/plans";
 import { Blog } from "@/components/blog";
 import { Footer } from "@/components/footer";
 
@@ -52,20 +50,18 @@ const jobData = [
 
 export default function Home() {
   return (
-    <main className="flex bg-[url('/images/background.png')] min-h-screen flex-col relative justify-between">
+    <main className="bg-[url('/images/background.png')] flex-col justify-between">
       <div className="items-center">
         <Navbar />
       </div>
-      <div className="flex flex-col md:flex-row align-middle justify-center mt-[5rem] space-y-4 md:space-y-0">
-  <div className="mb-4 md:mb-0">
-    <MainLogo />
-  </div>
-  <ProfileForm />
-</div>
+      <div className="flex md:flex-row justify-around mt-[5rem] space-y-4 md:space-y-0">
+        <MainLogo />
+        <ProfileForm />
+      </div>
       <About title={aboutData.title} />
 
-      <h1 className="text-purple flex items-center justify-center mt-4 md:mt-[8rem] text-4xl md:text-6xl font-bold underline">
-        O QUE OFERECEMOS?
+      <h1 className="text-purple flex items-center justify-center mt-4 md:mt-[8rem] text-4xl md:text-6xl font-bold">
+        O que oferecemos?
       </h1>
 
       <div className="flex flex-wrap justify-center mt-4 md:mt-8">
