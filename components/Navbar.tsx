@@ -31,7 +31,7 @@ export default function Header() {
   // }, [ref]);
 
   return (
-    <header className="w-full sticky top-0 z-50 px-6 flex items-center bg-[#1E1E1E]/75 h-[80px] md:px-24">
+    <header className="sticky top-0 z-50 px-6 flex items-center  bg-[#1E1E1E]/75 h-[80px] md:px-24">
       {/* Ícone do Hambúrguer */}
       <div className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <svg viewBox="0 0 100 80" width="40" height="40" fill="#FFFFFF">
