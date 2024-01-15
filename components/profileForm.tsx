@@ -50,21 +50,25 @@ export function ProfileForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-950 items-center rounded-3xl text-white"
+        className="bg-blue-950 shadow-xl shadow-black p-[2.5rem] items-center rounded-lg text-white"
       >
-        <div className="mt-[2rem]">
-          <Info />
+        <div className="text-xl pb-2 flex justify-center font-bold">
+          INFORMAÇÕES E ORÇAMENTOS
         </div>
-        <div className="p-6">
+        <p className="max-w-[20rem] font-extralight text-center pb-6 text-sm mx-auto">
+          Preencha o formulario ou clique no link abaixo para entrar em contato
+          com a nossa equipe
+        </p>
+        <div className="">
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-lg">Nome</FormLabel>
+                <FormLabel className="text-md">Nome</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-11/12 text-black"
+                    className="bg-white text-black"
                     placeholder="Digite seu nome"
                     {...field}
                   />
@@ -77,11 +81,11 @@ export function ProfileForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="mt-2">
-                <FormLabel className="text-2xl">E-mail</FormLabel>
+              <FormItem className="mt-4">
+                <FormLabel className="text-md">E-mail</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white text-black w-11/12"
+                    className="bg-white text-black"
                     type="email"
                     placeholder="Digite seu E-mail"
                     {...field}
@@ -92,20 +96,20 @@ export function ProfileForm() {
             )}
           />
         </div>
-        <div className="p-6">
+        <div className="">
           <FormField
             control={form.control}
             name="type"
             render={({ field }) => (
-              <FormItem className="">
-                <FormLabel className=" text-xl">
+              <FormItem className="mt-4">
+                <FormLabel className="text-md">
                   Você possui uma empresa formalizada?
                 </FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    className="flex p-2 flex-col space-y-1 text-xl"
+                    className="flex flex-col space-y-1 text-xl"
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
@@ -139,12 +143,12 @@ export function ProfileForm() {
             name="type2"
             render={({ field }) => (
               <FormItem className="pt-4">
-                <FormLabel className="text-lg">Sua empresa é:</FormLabel>
+                <FormLabel className="text-md">Sua empresa é:</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    className="flex flex-col p-2 space-y-1"
+                    className=""
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
@@ -184,13 +188,13 @@ export function ProfileForm() {
             name="invoicing"
             render={({ field }) => (
               <FormItem className="pt-6">
-                <FormLabel className="text-lg">
+                <FormLabel className="text-md">
                   Qual é a media de seu faturamento?
                 </FormLabel>
                 <FormControl>
                   <Input
                     type="number"
-                    className="bg-white text-black w-11/12"
+                    className="bg-white text-black"
                     placeholder="R$"
                     {...field}
                   />
@@ -201,14 +205,10 @@ export function ProfileForm() {
           />
 
           <div className="p-4 flex justify-center">
-            <Button
-              className="w-[20rem] hover:bg-slate-900/75 mx-auto"
-              type="submit"
-            >
+            <Button className="hover:bg-slate-900 w-11/12" type="submit">
               Enviar
             </Button>
           </div>
-          <WhatsApp />
         </div>
       </form>
     </Form>
