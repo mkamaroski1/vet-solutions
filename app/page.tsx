@@ -51,10 +51,8 @@ const jobData = [
 export default function Home() {
   return (
     <main className="relative bg-[url('/images/background.png')] flex-col justify-between">
-      <div className="items-center">
-        <Navbar />
-      </div>
-      <div className="flex md:flex-row justify-around mt-[5rem] space-y-4 md:space-y-0">
+      <Navbar />
+      <div className="flex mx-[4rem] justify-around mt-[5rem]">
         <MainLogo />
         <ProfileForm />
       </div>

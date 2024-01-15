@@ -8,8 +8,8 @@ const About = ({ title }: AboutProps) => {
   return (
     <>
       <div className="flex justify-between sm:flex-row">
-        <div className="shadow-inherit sm:mt-[24rem] sm:max-h-[42rem] bg-purple rounded-3xl mr-4 sm:mr-0">
-          <div className="mt-4 sm:mt-[4rem] mx-4 sm:ml-[5rem] sm:w-[53rem] h-auto sm:h-[38rem]">
+        <div className="shadow-inherit sm:mt-[24rem] sm:max-h-auto w-1/2 bg-purple rounded-3xl mr-4 sm:mr-0">
+          <div className="mt-4 sm:mt-[4rem] mx-4 sm:ml-[5rem] h-auto sm:h-[38rem]">
             <h1 className="text-sm font-bold text-white sm:text-3xl">
               {title}
             </h1>
@@ -42,7 +42,7 @@ const About = ({ title }: AboutProps) => {
         </div>
         <video
           src="https://www.youtube.com/watch?v=-UJ1qPTc_Vo"
-          className="shadow-inherit sm:w-[60rem] h-64 sm:h-[39rem] bg-black rounded-3xl mt-8 sm:mt-[34rem]"
+          className="shadow-inherit sm:w-1/3 h-64 sm:h-auto mx-4 bg-black rounded-3xl mt-8 sm:mt-[34rem]"
         />
       </div>
     </>

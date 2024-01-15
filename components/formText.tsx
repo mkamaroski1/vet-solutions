@@ -2,11 +2,11 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export const Info = () => {
   return (
-    <div>
+    <div className="border max-w-[30rem]">
       <h1 className="text-2xl font-bold mb-[1rem] flex items-center justify-center">
-        INFORMAÇÕES E <br /> ORÇAMENTOS
+        INFORMAÇÕES E ORÇAMENTOS
       </h1>
-      <p className="text-md text-center mt-[1rem]">
+      <p className="text-md text-center border p-4 mt-[1rem]">
         Preencha o formulario ou clique no link abaixo para entrar em contato
         com a nossa equipe
       </p>

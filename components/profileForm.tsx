@@ -50,21 +50,21 @@ export function ProfileForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-950 sm:w-[629px] h-auto rounded-3xl text-white sm:p-0 sm:mx-0"
+        className="bg-blue-950 items-center rounded-3xl text-white"
       >
-        <div className="w-full sm:w-[30rem] sm:h-[8rem] mt-[2rem] mx-auto sm:ml-[5rem]">
+        <div className="mt-[2rem]">
           <Info />
         </div>
-        <div className="space-y-3 pt-[2rem] px-4 sm:px-0 sm:ml-[3rem]">
+        <div className="p-6">
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-2xl">Nome</FormLabel>
+                <FormLabel className="text-lg">Nome</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white text-black w-full md:w-[33rem]"
+                    className="bg-white w-11/12 text-black"
                     placeholder="Digite seu nome"
                     {...field}
                   />
@@ -77,11 +77,11 @@ export function ProfileForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="mt-2">
                 <FormLabel className="text-2xl">E-mail</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white text-black w-full md:w-[33rem]"
+                    className="bg-white text-black w-11/12"
                     type="email"
                     placeholder="Digite seu E-mail"
                     {...field}
@@ -97,8 +97,8 @@ export function ProfileForm() {
             control={form.control}
             name="type"
             render={({ field }) => (
-              <FormItem className="p-5">
-                <FormLabel className="py-2 text-2xl">
+              <FormItem className="">
+                <FormLabel className=" text-xl">
                   Você possui uma empresa formalizada?
                 </FormLabel>
                 <FormControl>
@@ -138,8 +138,8 @@ export function ProfileForm() {
             control={form.control}
             name="type2"
             render={({ field }) => (
-              <FormItem className="p-6">
-                <FormLabel className="text-2xl">Sua empresa é:</FormLabel>
+              <FormItem className="pt-4">
+                <FormLabel className="text-lg">Sua empresa é:</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
@@ -183,14 +183,14 @@ export function ProfileForm() {
             control={form.control}
             name="invoicing"
             render={({ field }) => (
-              <FormItem className="px-6">
-                <FormLabel className="text-2xl">
+              <FormItem className="pt-6">
+                <FormLabel className="text-lg">
                   Qual é a media de seu faturamento?
                 </FormLabel>
                 <FormControl>
                   <Input
                     type="number"
-                    className="bg-white text-black w-full md:w-[33rem]"
+                    className="bg-white text-black w-11/12"
                     placeholder="R$"
                     {...field}
                   />
