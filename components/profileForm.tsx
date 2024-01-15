@@ -64,7 +64,7 @@ export function ProfileForm() {
                 <FormLabel className="text-2xl">Nome</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-full md:w-[33rem]"
+                    className="bg-white text-black w-full md:w-[33rem]"
                     placeholder="Digite seu nome"
                     {...field}
                   />
@@ -81,7 +81,7 @@ export function ProfileForm() {
                 <FormLabel className="text-2xl">E-mail</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-full md:w-[33rem]"
+                    className="bg-white text-black w-full md:w-[33rem]"
                     type="email"
                     placeholder="Digite seu E-mail"
                     {...field}
@@ -105,7 +105,7 @@ export function ProfileForm() {
                   <RadioGroup
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    className="flex flex-col space-y-1 text-xl"
+                    className="flex p-2 flex-col space-y-1 text-xl"
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
@@ -138,19 +138,19 @@ export function ProfileForm() {
             control={form.control}
             name="type2"
             render={({ field }) => (
-              <FormItem className="space-y-3">
+              <FormItem className="p-6">
                 <FormLabel className="text-2xl">Sua empresa é:</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    className="flex flex-col space-y-1"
+                    className="flex flex-col p-2 space-y-1"
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem value="clinic" />
                       </FormControl>
-                      <FormLabel className="font-normal">clinica</FormLabel>
+                      <FormLabel className="font-normal">Clínica</FormLabel>
                     </FormItem>
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
@@ -183,13 +183,14 @@ export function ProfileForm() {
             control={form.control}
             name="invoicing"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="px-6">
                 <FormLabel className="text-2xl">
                   Qual é a media de seu faturamento?
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-white w-full md:w-[33rem]"
+                    type="number"
+                    className="bg-white text-black w-full md:w-[33rem]"
                     placeholder="R$"
                     {...field}
                   />
@@ -200,7 +201,10 @@ export function ProfileForm() {
           />
 
           <div className="p-4 flex justify-center">
-            <Button className="w-[20rem] mx-auto" type="submit">
+            <Button
+              className="w-[20rem] hover:bg-slate-900/75 mx-auto"
+              type="submit"
+            >
               Enviar
             </Button>
           </div>
