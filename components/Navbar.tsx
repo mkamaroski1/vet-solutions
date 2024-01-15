@@ -1,13 +1,12 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const ref = useRef();
   const logo = "/images/Logo.svg";
   const VetSolutions = "/images/vetsolutions.svg";
   const links = [
@@ -19,19 +18,8 @@ export default function Header() {
     { text: "BLOG", href: "/blog" },
   ];
 
-  // Fechar o menu ao clicar fora dele
-  // useEffect(() => {
-  //   function handleClickOutside(event: () => void): void {
-  //     if (ref.current && !ref.current.contains(event.target)) {
-  //       setIsMenuOpen(false);
-  //     }
-  //   }
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => document.removeEventListener("mousedown", handleClickOutside);
-  // }, [ref]);
-
   return (
-    <header className="sticky top-0 z-50 px-6 flex items-center  bg-[#1E1E1E]/75 h-[80px] md:px-24">
+    <header className="top-0 flex items-center  bg-[#1E1E1E]/75 h-[80px] md:px-24">
       {/* Ícone do Hambúrguer */}
       <div className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <svg viewBox="0 0 100 80" width="40" height="40" fill="#FFFFFF">
@@ -42,7 +30,7 @@ export default function Header() {
       </div>
 
       {/* Logo */}
-      <div className="flex-grow flex justify-center">
+      <div className="flex justify-center">
         <Image width={48} height={60} src={logo} alt="logo" />
         <Image width={200} height={80} src={VetSolutions} alt="vetSolutions" />
       </div>
