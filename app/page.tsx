@@ -50,7 +50,7 @@ const jobData = [
 
 export default function Home() {
   return (
-    <main className="bg-[url('/images/background.png')] flex-col justify-between">
+    <main className="relative bg-[url('/images/background.png')] flex-col justify-between">
       <div className="items-center">
         <Navbar />
       </div>
