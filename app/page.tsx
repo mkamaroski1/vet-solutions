@@ -7,43 +7,44 @@ import { AboutJob } from "@/components/aboutJob";
 import { Blog } from "@/components/blog";
 import { Footer } from "@/components/footer";
 
+// TODO: Refactor this piece of shit 💩
 const cardData = [
   {
     image: "aboutJobImages/Contador.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Contador",
   },
   {
     image: "aboutJobImages/recHumanos.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Recursos Humanos",
   },
   {
     image: "aboutJobImages/marketing.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Marketing",
   },
   {
     image: "aboutJobImages/analise.svg",
-    href: "https:www.google.com/",
-    altText: "Análise",  
+    href: "https://wa.link/l0y3zd",
+    altText: "Análise",
   },
 ];
 
 const jobData = [
   {
     image: "/branding.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Branding",
   },
   {
     image: "/criacaoSites.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Criaçao de sites",
   },
   {
     image: "/aberturaEmpresas.svg",
-    href: "https:www.google.com/",
+    href: "https://wa.link/l0y3zd",
     altText: "Abertura de empresas",
   },
 ];
@@ -56,7 +57,7 @@ export default function Home() {
         <MainLogo />
         <ProfileForm />
       </div>
-      <About title={aboutData.title} />
+      <About />
 
       <h1 className="text-purple flex items-center justify-center mt-4 md:mt-[8rem] text-4xl md:text-6xl font-bold">
         O que oferecemos?
@@ -68,7 +69,7 @@ export default function Home() {
         ))}
       </div>
 
-      <h1 className="text-purple flex items-center justify-center mt-4 md:mt-[8rem] text-4xl md:text-6xl font-bold underline">
+      <h1 className="text-purple flex items-center justify-center mt-[10rem] text-4xl md:text-6xl font-bold">
         Serviços adicionais
       </h1>
 
@@ -79,7 +80,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-b from-orange-100 to-purple ">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </main>
