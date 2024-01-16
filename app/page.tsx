@@ -26,7 +26,7 @@ const cardData = [
   {
     image: "aboutJobImages/analise.svg",
     href: "https:www.google.com/",
-    altText: "Análise",
+    altText: "Análise",  
   },
 ];
 

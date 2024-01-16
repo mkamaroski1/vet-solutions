@@ -9,14 +9,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const logo = "/images/Logo.svg";
   const VetSolutions = "/images/vetsolutions.svg";
-  const links = [
-    { text: "HOME", href: "/" },
-    { text: "SOBRE NÓS", href: "/sobre-nos" },
-    { text: "O QUE OFERECEMOS", href: "/o-que-oferecemos" },
-    { text: "NOSSO DIFERENCIAL", href: "/nosso-diferencial" },
-    { text: "PLANOS", href: "/planos" },
-    { text: "BLOG", href: "/blog" },
-  ];
+  // const links = [
+  // { text: "HOME", href: "/" },
+  // { text: "SOBRE NÓS", href: "/sobre-nos" },
+  // { text: "O QUE OFERECEMOS", href: "/o-que-oferecemos" },
+  // { text: "NOSSO DIFERENCIAL", href: "/nosso-diferencial" },
+  // { text: "PLANOS", href: "/planos" },
+  // { text: "BLOG", href: "/blog" },
+  // ];
 
   return (
     <header className="top-0 sticky flex items-center  bg-[#1E1E1E]/75 h-[80px] md:px-24">
@@ -30,18 +30,18 @@ export default function Header() {
       </div>
 
       {/* Logo */}
-      <div className="flex justify-center">
+      <Link href="/" className="flex justify-center">
         <Image width={48} height={60} src={logo} alt="logo" />
         <Image width={200} height={80} src={VetSolutions} alt="vetSolutions" />
-      </div>
+      </Link>
 
       {/* Links da Navbar */}
       <div className="hidden md:flex text-white gap-8 text-xs justify-end items-center flex-grow">
-        {links.map((link, index) => (
-          <Link key={index} href={link.href}>
-            <span className="cursor-pointer">{link.text}</span>
-          </Link>
-        ))}
+        {/* {links.map((link, index) => ( */}
+        <a>
+          <span className="cursor-pointer"></span>
+        </a>
+        {/* ))} */}
         <Button className="bg-purple text-mint font-semibold hover:underline rounded-full hover:bg-purple/75">
           Entre em contato
         </Button>
@@ -63,11 +63,11 @@ export default function Header() {
           </svg>
         </button>
         <div className="flex flex-col text-white space-y-4 mt-10">
-          {links.map((link, index) => (
+          {/* {links.map((link, index) => (
             <Link key={index} href={link.href}>
               <span className="py-2 text-lg cursor-pointer">{link.text}</span>
             </Link>
-          ))}
+          ))} */}
         </div>
       </div>
     </header>
