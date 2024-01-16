@@ -1,19 +1,14 @@
-import { ReactComponentElement, ReactNode } from "react";
-
-type AboutProps = {
-  title: string;
-};
-
-const About = ({ title }: AboutProps) => {
+const About = () => {
   return (
     <>
-      <div className="flex justify-between sm:flex-row">
-        <div className="shadow-inherit sm:mt-[24rem] sm:max-h-auto w-1/2 bg-purple rounded-3xl mr-4 sm:mr-0">
+      <div className="flex md:flex-row mt-96">
+        <div className="shadow-inherit w-3/4 bg-purple rounded-3xl mr-4 sm:mr-0">
           <div className="mt-4 sm:mt-[4rem] mx-4 sm:ml-[5rem] h-auto sm:h-[38rem]">
             <h1 className="text-sm font-bold text-white sm:text-3xl">
-              {title}
+              A primeira empresa com foco em BackOffice para empreendedores do
+              mercado Pet
             </h1>
-            <p className="mt-12 text-white text-sm sm:text-lg">
+            <p className="mt-12 w-[60rem] text-white text-sm sm:text-lg">
               Na Vet Solutions, simplificamos a gestão do seu empreendimento,
               permitindo que você se concentre no que é fundamental. Nossos
               serviços abrangem contabilidade, recursos humanos, análise de
@@ -40,10 +35,13 @@ const About = ({ title }: AboutProps) => {
             </p>
           </div>
         </div>
-        <video
-          src="https://www.youtube.com/watch?v=-UJ1qPTc_Vo"
-          className="shadow-inherit sm:w-1/3 h-64 sm:h-auto mx-4 bg-black rounded-3xl mt-8 sm:mt-[34rem]"
-        />
+        <iframe
+          title="YouTube Video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-UJ1qPTc_Vo"
+          className="shadow-inherit sm:w-1/3 z-1 ml-[-20rem] h-[28rem] bg-black rounded-3xl mt-64"
+        ></iframe>
       </div>
     </>
   );
