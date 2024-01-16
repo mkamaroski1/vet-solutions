@@ -42,7 +42,10 @@ export default function Header() {
           <span className="cursor-pointer"></span>
         </a>
         {/* ))} */}
-        <Button className="bg-purple text-mint font-semibold hover:underline rounded-full hover:bg-purple/75">
+        <Button
+          onClick={() => window.open("https://wa.link/l0y3zd")}
+          className="bg-purple text-mint font-semibold hover:underline rounded-full hover:bg-purple/75"
+        >
           Entre em contato
         </Button>
       </div>
