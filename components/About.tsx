@@ -35,13 +35,6 @@ const About = () => {
             </p>
           </div>
         </div>
-        <iframe
-          title="YouTube Video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/-UJ1qPTc_Vo"
-          className="shadow-inherit sm:w-1/3 z-1 ml-[-20rem] h-[28rem] bg-black rounded-3xl mt-64"
-        ></iframe>
       </div>
     </>
   );

@@ -6,6 +6,7 @@ import { MainLogo } from "@/components/mainLogo";
 import { AboutJob } from "@/components/aboutJob";
 import { Blog } from "@/components/blog";
 import { Footer } from "@/components/footer";
+import { Video } from "@/components/video";
 
 // TODO: Refactor this piece of shit 💩
 const cardData = [
@@ -55,9 +56,11 @@ export default function Home() {
       <Navbar />
       <div className="flex mx-[4rem] justify-around mt-[5rem]">
         <MainLogo />
-        <ProfileForm />
+        {/* <ProfileForm /> */}
       </div>
       <About />
+
+      <Video />
 
       <h1 className="text-purple flex items-center justify-center mt-4 md:mt-[8rem] text-4xl md:text-6xl font-bold">
         O que oferecemos?
@@ -80,8 +83,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-b from-orange-100 to-purple ">
-        {/* <Blog /> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );

@@ -5,7 +5,7 @@ const VetSolutions = "/images/vetsolutions.svg";
 export const MainLogo = () => {
   return (
     <div>
-      <div className="text-center mt-[20rem]">
+      <div className="text-center mt-[10rem]">
         <div className="inline-block relative max-w-xs mx-auto md:w-auto md:max-w-none">
           <Image
             src={VetSolutions}
