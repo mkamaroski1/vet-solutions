@@ -21,7 +21,7 @@ const cardData = [
     altText: "Recursos Humanos",
   },
   {
-    image: "aboutJobImages/marketing.svg",
+    image: "aboutJobImages/Marketing.svg",
     href: "https://wa.link/l0y3zd",
     altText: "Marketing",
   },
